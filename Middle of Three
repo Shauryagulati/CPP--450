@@ -1,0 +1,14 @@
+class Solution{
+  public:
+    int middle(int a, int b, int c){
+        //code here//Position this line where user code will be pasted.
+        if ((a < b && b < c) || (c < b && b < a))
+        return b;
+ 
+        else if ((b < a && a < c) || (c < a && a < b))
+        return a;
+ 
+        else
+            return c;
+    }
+};
